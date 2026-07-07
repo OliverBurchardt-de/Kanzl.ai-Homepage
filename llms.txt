@@ -1,0 +1,26 @@
+# Kanzl.ai
+
+> Kanzl.ai macht Rechts- und Steuerkanzleien KI-fähig. Wir übersetzen Künstliche Intelligenz in konkrete, DSGVO-konforme Anwendungsfälle für den Kanzleialltag – mit Beratung, Video-Kursen, Workshops und Keynotes. Aus der Kanzlei, für die Kanzlei.
+
+## Angebot
+- KI-Video-Kurse: E-Learning-Plattform mit praxisnahen Videos für Kanzlei-Teams.
+- Beratung & Implementierung: Analyse, Tool-Auswahl und DSGVO-konforme Einrichtung ("Done-for-you").
+- Workshops & Inhouse-Trainings: Live vor Ort oder remote, zugeschnitten auf die Rechtsgebiete der Kanzlei.
+- Keynotes & Vorträge: für Kammern, Verbände und Kanzlei-Events.
+
+## Anwendungsfälle
+- Schriftsätze und Entwürfe erstellen
+- Dokumente und Akten zusammenfassen
+- Rechtsrecherche vorbereiten
+- Diktat und Transkription
+- Mandantenkommunikation
+- Fristen und Aufgaben erkennen
+
+## Haltung
+- Assistenz statt Autopilot: Die fachliche und rechtliche Verantwortung bleibt beim Menschen.
+- Datenschutz und Berufsrecht zuerst: EU-Hosting, keine Nutzung von Mandantendaten zum Training, klare Löschkonzepte.
+- Kein Hype: nur Anwendungsfälle, die in einer echten Kanzlei erprobt sind.
+
+## Kontakt
+- E-Mail: oliver.burchardt@burchardt-kollegen.de
+- Website: https://kanzl.ai/

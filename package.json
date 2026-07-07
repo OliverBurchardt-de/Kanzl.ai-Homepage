@@ -1,0 +1,18 @@
+{
+  "name": "kanzl-ai-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kanzl.ai — KI, die in Ihrer Kanzlei ankommt. Statische Marketing-Website (Rechts- & Steuerkanzleien).",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "fonts": "node scripts/copy-fonts.mjs"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fontsource-variable/fraunces": "^5.2.9",
+    "@fontsource-variable/instrument-sans": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8"
+  }
+}
