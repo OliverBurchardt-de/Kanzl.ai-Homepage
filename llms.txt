@@ -4,7 +4,7 @@
 
 ## Angebot
 - KI-Video-Kurse: E-Learning-Plattform mit praxisnahen Videos für Kanzlei-Teams.
-- Beratung & Implementierung: Analyse, Tool-Auswahl und DSGVO-konforme Einrichtung ("Done-for-you").
+- Beratung & Begleitung: strategische Beratung zu passenden Anwendungsfällen und laufendes Coaching für das Team (keine technische Implementierung).
 - Workshops & Inhouse-Trainings: Live vor Ort oder remote, zugeschnitten auf die Rechtsgebiete der Kanzlei.
 - Keynotes & Vorträge: für Kammern, Verbände und Kanzlei-Events.
 
@@ -18,7 +18,8 @@
 
 ## Haltung
 - Assistenz statt Autopilot: Die fachliche und rechtliche Verantwortung bleibt beim Menschen.
-- Datenschutz und Berufsrecht zuerst: EU-Hosting, keine Nutzung von Mandantendaten zum Training, klare Löschkonzepte.
+- Datenschutz und Berufsrecht zuerst: Wir vermitteln, worauf es ankommt (EU-Hosting, Auftragsverarbeitung, keine Nutzung von Mandantendaten zum Training). Die technische Umsetzung bleibt bei der Kanzlei.
+- Fokus auf Enablement: Wir befähigen Teams, KI selbst sicher zu nutzen – wir sind kein IT-Dienstleister.
 - Kein Hype: nur Anwendungsfälle, die in einer echten Kanzlei erprobt sind.
 
 ## Kontakt
