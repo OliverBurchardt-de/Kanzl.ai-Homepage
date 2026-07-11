@@ -378,7 +378,7 @@ strong { font-weight: 640; }
 /* CTA inside the mobile dropdown — hidden on desktop */
 .nav-cta-mobile { display: none; }
 
-@media (max-width: 60rem) {
+@media (max-width: 68rem) {
   .nav-links {
     position: fixed; inset: 4.5rem 0 auto 0;
     flex-direction: column; align-items: stretch; gap: 0;
@@ -783,3 +783,39 @@ strong { font-weight: 640; }
 .center { text-align: center; }
 .mx-auto { margin-inline: auto; }
 .maxw-narrow { max-width: var(--container-narrow); }
+
+/* ---------- Why-now / Datenvisualisierungen ----------------------------- */
+.viz-block {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center;
+}
+.viz-block + .viz-block { margin-top: clamp(2.5rem, 6vw, 4.5rem); }
+.viz-block.reverse .viz { order: 1; }
+.viz-block.reverse .viz-text { order: 2; }
+@media (max-width: 54rem) {
+  .viz-block { grid-template-columns: 1fr; }
+  .viz-block.reverse .viz-text { order: -1; }
+}
+.viz-kicker {
+  font-family: var(--font-mono); font-size: var(--step--1);
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--signal-ink); margin-bottom: 0.6rem;
+}
+.viz-text h3 { font-size: var(--step-2); }
+.viz-text p { color: var(--ink-soft); margin-top: var(--space-s); }
+.viz-text p strong { color: var(--ink); }
+
+.viz { margin: 0; }
+.viz-canvas-wrap {
+  position: relative; width: 100%; aspect-ratio: 16 / 11;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden;
+}
+.viz-canvas-wrap canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.source-note {
+  margin-top: 0.75rem; font-family: var(--font-mono);
+  font-size: 0.72rem; letter-spacing: 0.01em; color: var(--ink-mute);
+}
+.analogy { margin-top: var(--space-m); border-left: 3px solid var(--signal); padding: 0.1rem 0 0.1rem 1.25rem; }
+.analogy p { font-family: var(--font-display); font-style: italic; font-size: var(--step-1); color: var(--ink); line-height: 1.3; }
+.analogy cite { display: block; margin-top: 0.6rem; font-style: normal; color: var(--ink-soft); font-size: var(--step--1); line-height: 1.5; }
