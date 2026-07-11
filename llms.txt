@@ -20,6 +20,7 @@
 - Assistenz statt Autopilot: Die fachliche und rechtliche Verantwortung bleibt beim Menschen.
 - Datenschutz und Berufsrecht zuerst: Wir vermitteln, worauf es ankommt (EU-Hosting, Auftragsverarbeitung, keine Nutzung von Mandantendaten zum Training). Die technische Umsetzung bleibt bei der Kanzlei.
 - Fokus auf Enablement: Wir befähigen Teams, KI selbst sicher zu nutzen – wir sind kein IT-Dienstleister.
+- Ergänzung, kein Ersatz: KI arbeitet neben der bestehenden Kanzleisoftware (z. B. DATEV); Buchführung, Fachanwendungen und Fristenkontrolle bleiben unberührt.
 - Kein Hype: nur Anwendungsfälle, die in einer echten Kanzlei erprobt sind.
 
 ## Kontakt

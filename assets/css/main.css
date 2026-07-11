@@ -441,6 +441,8 @@ strong { font-weight: 640; }
   font-size: var(--step-1); line-height: 1.55; color: var(--on-ink-soft);
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-s); margin-top: var(--space-l); }
+.cta-note { margin-top: var(--space-s); font-family: var(--font-mono); font-size: var(--step--1); color: var(--ink-mute); }
+.hero .cta-note, .cta-final .cta-note { color: var(--on-ink-soft); }
 
 .hero-trust {
   margin-top: var(--space-l); padding-top: var(--space-m);
