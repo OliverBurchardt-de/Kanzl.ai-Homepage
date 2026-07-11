@@ -324,11 +324,12 @@ strong { font-weight: 640; }
   gap: var(--space-m); min-height: 4.5rem;
 }
 .nav-links {
-  display: flex; align-items: center; gap: clamp(0.5rem, 2vw, 1.75rem);
+  display: flex; align-items: center; gap: clamp(0.4rem, 1.3vw, 1.15rem);
 }
 .nav-links a {
   color: var(--ink-soft); text-decoration: none; font-weight: 500;
-  font-size: var(--step-0); padding: 0.4rem 0.2rem; position: relative;
+  font-size: var(--step--1); padding: 0.4rem 0.2rem; position: relative;
+  white-space: nowrap;
 }
 .nav-links a:hover { color: var(--ink); }
 .nav-links a::after {
@@ -378,7 +379,7 @@ strong { font-weight: 640; }
 /* CTA inside the mobile dropdown — hidden on desktop */
 .nav-cta-mobile { display: none; }
 
-@media (max-width: 68rem) {
+@media (max-width: 76rem) {
   .nav-links {
     position: fixed; inset: 4.5rem 0 auto 0;
     flex-direction: column; align-items: stretch; gap: 0;
@@ -819,3 +820,51 @@ strong { font-weight: 640; }
 .analogy { margin-top: var(--space-m); border-left: 3px solid var(--signal); padding: 0.1rem 0 0.1rem 1.25rem; }
 .analogy p { font-family: var(--font-display); font-style: italic; font-size: var(--step-1); color: var(--ink); line-height: 1.3; }
 .analogy cite { display: block; margin-top: 0.6rem; font-style: normal; color: var(--ink-soft); font-size: var(--step--1); line-height: 1.5; }
+
+.why-cta {
+  margin-top: clamp(2rem, 5vw, 3.5rem); text-align: center;
+  font-size: var(--step-1); color: var(--ink-soft); text-wrap: balance;
+}
+.why-cta a { font-weight: 600; text-decoration: none; white-space: nowrap; }
+.why-cta a:hover { text-decoration: underline; }
+
+/* ---------- Person card (Über) ------------------------------------------ */
+.person-card {
+  margin: 0; display: flex; gap: clamp(1rem, 3vw, 1.5rem); align-items: stretch;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: clamp(1.1rem, 3vw, 1.5rem);
+  box-shadow: var(--shadow-sm);
+}
+@media (max-width: 26rem) { .person-card { flex-direction: column; } }
+.person-photo {
+  position: relative; flex: none; width: clamp(6rem, 26vw, 8.5rem); align-self: stretch;
+  min-height: 8.5rem; border-radius: 12px; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background:
+    radial-gradient(120% 120% at 20% 0%, rgba(28, 62, 240, 0.30), transparent 60%),
+    var(--brand-ink-2);
+}
+.person-initials {
+  font-family: var(--font-display); font-size: 2.4rem; font-weight: 500;
+  color: var(--on-ink); letter-spacing: -0.01em;
+}
+.person-photo-note {
+  position: absolute; bottom: 0.5rem; left: 0; right: 0; text-align: center;
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--on-ink-soft);
+}
+.person-body { display: flex; flex-direction: column; justify-content: center; }
+.person-name { font-family: var(--font-display); font-size: var(--step-2); line-height: 1.1; color: var(--ink); }
+.person-role { font-family: var(--font-mono); font-size: var(--step--1); color: var(--signal-ink); margin-top: 0.3rem; letter-spacing: 0.01em; }
+.person-facts { margin-top: var(--space-s); display: grid; gap: 0.5rem; }
+.person-facts li { display: flex; gap: 0.55rem; align-items: flex-start; color: var(--ink-soft); font-size: var(--step--1); line-height: 1.4; }
+.person-facts li svg { width: 1rem; height: 1rem; color: var(--signal-ink); flex: none; margin-top: 0.2rem; }
+
+/* Inline tag on a use-case heading (e.g. "auch für Anwälte") */
+.card-tag {
+  display: inline-block; vertical-align: middle; margin-left: 0.4rem;
+  font-family: var(--font-mono); font-size: 0.6rem; font-weight: 500;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--signal-ink); background: var(--signal-weak);
+  border-radius: 999px; padding: 0.15rem 0.5rem; white-space: nowrap;
+}

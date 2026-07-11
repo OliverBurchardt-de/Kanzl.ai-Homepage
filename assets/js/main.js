@@ -105,31 +105,31 @@
 
   var scenes = [
     {
-      prompt: "Fasse diese 40-seitige Klageschrift zusammen und liste alle Fristen auf.",
+      prompt: "Prüfe diesen Steuerbescheid auf Abweichungen zu unserer Erklärung.",
       items: [
-        "Kernsachverhalt in 6 Sätzen zusammengefasst",
-        "3 Fristen erkannt &amp; im Kalender vorgemerkt",
-        "Beweisangebote strukturiert aufgelistet"
+        "3 Abweichungen zur Erklärung erkannt",
+        "Einspruchsfrist erkannt &amp; vorgemerkt",
+        "Begründungsentwurf für den Einspruch erstellt"
       ],
-      foot: "24 Sekunden statt 45 Minuten — geprüft von der Fachkraft."
+      foot: "Aus Stunden werden Minuten — geprüft von der Fachkraft."
     },
     {
-      prompt: "Entwirf ein Mandantenschreiben zur Fristverlängerung.",
+      prompt: "Fasse diesen Betriebsprüfungsbericht auf die strittigen Punkte zusammen.",
       items: [
-        "Höflicher Entwurf in Ihrem Kanzleistil",
-        "Passende Höflichkeits- und Schlussformel",
-        "Nur noch prüfen und freigeben"
+        "Kernaussagen in 6 Sätzen zusammengefasst",
+        "4 strittige Feststellungen markiert",
+        "Argumente je Position vorsortiert"
       ],
-      foot: "Vom leeren Blatt zum Entwurf in unter einer Minute."
+      foot: "Vom 60-Seiten-PDF zur Entscheidungsvorlage in Minuten."
     },
     {
-      prompt: "Welche Unterlagen fehlen mir für diese Steuererklärung?",
+      prompt: "Prüfe diesen Vertrag auf kritische Klauseln.",
       items: [
-        "Checkliste aus den Mandantendaten erstellt",
-        "4 fehlende Belege konkret benannt",
-        "Vorformulierte Nachfrage an den Mandanten"
+        "Kritische Klauseln hervorgehoben",
+        "Fehlende Standardklauseln benannt",
+        "Formulierungsvorschläge ergänzt"
       ],
-      foot: "Weniger Rückfragen, sauberere Akte."
+      foot: "Ein Prüf-Durchgang, den Sie nur noch fachlich abnehmen."
     }
   ];
 
