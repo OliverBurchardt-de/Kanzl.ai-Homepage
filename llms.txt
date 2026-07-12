@@ -22,6 +22,7 @@
 - Fokus auf Enablement: Wir befähigen Teams, KI selbst sicher zu nutzen – wir sind kein IT-Dienstleister.
 - Ergänzung, kein Ersatz: KI arbeitet neben der bestehenden Kanzleisoftware (z. B. DATEV); Buchführung, Fachanwendungen und Fristenkontrolle bleiben unberührt.
 - Kein Hype: nur Anwendungsfälle, die in einer echten Kanzlei erprobt sind.
+- Selbstversuch als Beweis: In der eigenen Kanzlei wurden mehrere teure Tools und externe Dienstleister durch eigene, KI-gestützte Abläufe ersetzt (fünfstellige Fixkostenersparnis pro Jahr, je nach Kanzleigröße). Zusätzlicher Effekt: Wachstum ohne gleich hohen Personalaufbau, Entlastung des Teams für höherwertige Arbeit.
 
 ## Kontakt
 - E-Mail: oliver.burchardt@burchardt-kollegen.de

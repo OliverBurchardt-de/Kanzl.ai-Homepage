@@ -870,3 +870,34 @@ strong { font-weight: 640; }
   color: var(--signal-ink); background: var(--signal-weak);
   border-radius: 999px; padding: 0.15rem 0.5rem; white-space: nowrap;
 }
+
+/* ---------- Selbstversuch / Proof band ---------------------------------- */
+.proof-figure {
+  margin-top: var(--space-m);
+  font-family: var(--font-display); font-size: var(--step-2); line-height: 1.2;
+  color: var(--on-ink); text-wrap: balance;
+}
+.proof-figure strong { color: var(--signal-on-ink); font-weight: 500; }
+
+.ledger {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--on-ink-line); border-radius: var(--radius);
+  padding: clamp(1.1rem, 3vw, 1.5rem);
+}
+.ledger-head {
+  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--on-ink-soft); margin-bottom: var(--space-xs);
+}
+.ledger ul { display: grid; }
+.ledger li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  padding: 0.7rem 0; border-top: 1px solid var(--on-ink-line);
+  color: var(--on-ink); font-size: var(--step-0);
+}
+.ledger li:first-of-type { border-top: none; }
+.ledger-arrow {
+  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.03em;
+  text-transform: uppercase; color: var(--signal-on-ink); white-space: nowrap; flex: none;
+}
+.ledger-arrow::before { content: "→ "; }
+.ledger-foot { margin-top: var(--space-s); font-size: var(--step--1); color: var(--on-ink-soft); }
