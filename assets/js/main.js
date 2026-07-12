@@ -394,7 +394,7 @@
     function xAt(t) { return x0 + t * plotW; }
     function yAt(v) { return yB - v * plotH; }
     function ai(t) { return 0.5 + 0.44 * Math.pow(t, 1.8); }
-    function no(t) { return 0.5 - 0.16 * t; }
+    function no(t) { return 0.5 - 0.05 * t; } /* nahezu flach: Vorsprung wächst durch Steigen, nicht Fallen */
     var tMax = easeOutCubic(p), steps = 110, i, t;
 
     // baseline + "heute" axis
