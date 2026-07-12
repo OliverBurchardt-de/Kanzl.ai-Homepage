@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- kanzl.ai – Signet (primaer) fuer Favicon, LinkedIn-Avatar, Video-Outro. Initial "k" + goldener Punkt. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+
+  <!-- Anthrazit-Kreis als Traeger: haelt den goldenen Punkt lesbar -->
+  <circle cx="60" cy="60" r="58" fill="#22252A"/>
+
+  <!-- Weisses "k", rechtsbuendig, damit der Punkt konstant daneben sitzt -->
+  <text x="60" y="83"
+        font-family="Poppins, Montserrat, 'Segoe UI', sans-serif"
+        font-weight="600" font-size="62" letter-spacing="-1"
+        fill="#FFFFFF" text-anchor="end">k</text>
+
+  <!-- Goldener Punkt – dieselbe Geste wie in der Wortmarke -->
+  <circle cx="76" cy="76" r="8" fill="#F7B234"/>
+</svg>

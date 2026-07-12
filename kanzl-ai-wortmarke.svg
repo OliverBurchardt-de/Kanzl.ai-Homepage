@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- kanzl.ai – Wortmarke (primaer). Das .ai ersetzt das "-ei": kanzl.ai wird als "Kanzlei" gelesen. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+
+  <!-- "kanzl": rechtsbuendig, waechst nach links vom Punkt weg (konstanter Abstand dank text-anchor="end") -->
+  <text x="164" y="78"
+        font-family="Poppins, Montserrat, 'Segoe UI', sans-serif"
+        font-weight="600" font-size="60" letter-spacing="-1"
+        fill="#22252A" text-anchor="end">kanzl</text>
+
+  <!-- Der goldene Punkt: das Scharnier des Wortspiels, als eigene Form gezeichnet -->
+  <circle cx="180" cy="70" r="9" fill="#F7B234"/>
+
+  <!-- "ai": linksbuendig, waechst nach rechts vom Punkt weg -->
+  <text x="196" y="78"
+        font-family="Poppins, Montserrat, 'Segoe UI', sans-serif"
+        font-weight="600" font-size="60" letter-spacing="-1"
+        fill="#22252A" text-anchor="start">ai</text>
+</svg>
