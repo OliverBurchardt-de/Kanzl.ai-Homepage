@@ -1,6 +1,8 @@
 /* ==========================================================================
-   Kanzl.ai — Design System "Ink & Signal"
-   Selbstgehostete Fonts (DSGVO), Light/Dark, WCAG 2.1 AA, Core Web Vitals
+   kanzl.ai — Design System "Anthrazit & Gold"
+   Markenfarben: Anthrazit #22252A (Text/dunkle Flächen), Gold #F7B234 (Akzent).
+   Regel: Gold ist Fläche/Akzent, nie Text auf hellem Grund (Kontrast).
+   Selbstgehostete Fonts (DSGVO), Light/Dark, WCAG 2.1 AA, Core Web Vitals.
    ========================================================================== */
 
 /* ---------- Fonts (self-hosted, variable, font-display: swap) ------------- */
@@ -29,20 +31,26 @@
 
 /* ---------- Tokens -------------------------------------------------------- */
 :root {
-  /* Fixed "brand ink" surfaces (always dark, e.g. hero, footer) */
-  --brand-ink: #090d17;
-  --brand-ink-2: #0d1424;
-  --on-ink: #f2f5fa;
-  --on-ink-soft: #a7b1c2;
-  --on-ink-line: rgba(255, 255, 255, 0.12);
-  --signal-on-ink: #7d95ff;
+  /* Fixed "brand ink" surfaces (always dark: hero, bands, footer) — Anthrazit */
+  --brand-ink: #22252A;
+  --brand-ink-2: #1b1e23;
+  --on-ink: #f5f4f0;
+  --on-ink-soft: #aeb1b6;
+  --on-ink-line: rgba(255, 255, 255, 0.13);
+  --signal-on-ink: #F7B234;      /* Gold: accent on dark surfaces (≈8.6:1 on Anthrazit) */
 
-  /* Accent — vivid cobalt "Signal" */
-  --signal: #1c3ef0;
-  --signal-hover: #1631c9;
-  --signal-ink: #1730c2;         /* AA link text on light */
-  --signal-weak: rgba(28, 62, 240, 0.10);
-  --verify: #0c8f63;             /* used only for confirmations/checks */
+  /* Brand — Anthrazit & Gold */
+  --anthracite: #22252A;
+  --gold: #F7B234;
+  --gold-strong: #E0951A;        /* darker gold: hover, edges */
+  --on-gold: #22252A;            /* text/glyph on gold fills (≈8.6:1) */
+
+  /* Accent (semantic). Gold is a FILL/accent — never text on a light ground. */
+  --signal: #F7B234;             /* accent fills: buttons, chips, bars */
+  --signal-hover: #E0951A;
+  --signal-ink: #22252A;         /* accent TEXT on light = Anthrazit (gold fails contrast on white) */
+  --signal-weak: rgba(247, 178, 52, 0.16);
+  --verify: #157347;             /* success (AA on light); brighter on dark (below) */
 
   /* Type */
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
@@ -77,35 +85,35 @@
   --radius-lg: 22px;
   --radius-pill: 999px;
 
-  /* Light theme (default) */
-  --paper: #f6f6f2;
+  /* Light theme (default) — warm neutral paper, Anthrazit ink */
+  --paper: #f6f5f1;
   --surface: #ffffff;
-  --surface-2: #ecede7;
-  --ink: #0b111e;
-  --ink-soft: #37414f;
-  --ink-mute: #5c6675;
-  --line: rgba(11, 17, 30, 0.12);
-  --line-strong: rgba(11, 17, 30, 0.24);
-  --shadow-sm: 0 1px 2px rgba(11, 17, 30, 0.05), 0 2px 8px rgba(11, 17, 30, 0.05);
-  --shadow-md: 0 8px 30px rgba(11, 17, 30, 0.10);
-  --shadow-lg: 0 24px 60px rgba(11, 17, 30, 0.16);
+  --surface-2: #edece6;
+  --ink: #22252A;
+  --ink-soft: #4a4e55;
+  --ink-mute: #5f636a;
+  --line: rgba(34, 37, 42, 0.12);
+  --line-strong: rgba(34, 37, 42, 0.26);
+  --shadow-sm: 0 1px 2px rgba(34, 37, 42, 0.05), 0 2px 8px rgba(34, 37, 42, 0.05);
+  --shadow-md: 0 8px 30px rgba(34, 37, 42, 0.10);
+  --shadow-lg: 0 24px 60px rgba(34, 37, 42, 0.16);
 
   color-scheme: light;
 }
 
 :root[data-theme="dark"] {
-  --paper: #090d17;
-  --surface: #111a2c;
-  --surface-2: #0d1424;
-  --ink: #eef2f8;
-  --ink-soft: #b3bccb;
-  --ink-mute: #8592a4;
+  --paper: #17191d;
+  --surface: #212429;
+  --surface-2: #1b1e23;
+  --ink: #f2f1ed;
+  --ink-soft: #b7b9be;
+  --ink-mute: #8b8e94;
   --line: rgba(255, 255, 255, 0.12);
   --line-strong: rgba(255, 255, 255, 0.22);
-  --signal: #6480ff;
-  --signal-hover: #8199ff;
-  --signal-ink: #93a6ff;
-  --signal-weak: rgba(100, 128, 255, 0.14);
+  --signal: #F7B234;
+  --signal-hover: #ffc356;
+  --signal-ink: #F7B234;         /* accent text on dark = gold (surfaces are dark) */
+  --signal-weak: rgba(247, 178, 52, 0.16);
   --verify: #34d399;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 10px 34px rgba(0, 0, 0, 0.45);
@@ -115,18 +123,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #090d17;
-    --surface: #111a2c;
-    --surface-2: #0d1424;
-    --ink: #eef2f8;
-    --ink-soft: #b3bccb;
-    --ink-mute: #8592a4;
+    --paper: #17191d;
+    --surface: #212429;
+    --surface-2: #1b1e23;
+    --ink: #f2f1ed;
+    --ink-soft: #b7b9be;
+    --ink-mute: #8b8e94;
     --line: rgba(255, 255, 255, 0.12);
     --line-strong: rgba(255, 255, 255, 0.22);
-    --signal: #6480ff;
-    --signal-hover: #8199ff;
-    --signal-ink: #93a6ff;
-    --signal-weak: rgba(100, 128, 255, 0.14);
+    --signal: #F7B234;
+    --signal-hover: #ffc356;
+    --signal-ink: #F7B234;
+    --signal-weak: rgba(247, 178, 52, 0.16);
     --verify: #34d399;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 10px 34px rgba(0, 0, 0, 0.45);
@@ -165,8 +173,8 @@ picture,
 video,
 svg { display: block; max-width: 100%; height: auto; }
 
-a { color: var(--signal-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-a:hover { color: var(--signal-hover); }
+a { color: var(--ink); text-decoration-color: var(--gold-strong); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--ink); text-decoration-color: var(--gold); text-decoration-thickness: 2px; }
 
 button { font: inherit; color: inherit; cursor: pointer; }
 
@@ -175,7 +183,7 @@ ul, ol { padding: 0; list-style: none; }
 :target { scroll-margin-top: 6rem; }
 
 /* Selection */
-::selection { background: var(--signal); color: #fff; }
+::selection { background: var(--signal); color: var(--on-gold); }
 
 /* ---------- Typography --------------------------------------------------- */
 h1, h2, h3, h4 {
@@ -261,19 +269,21 @@ strong { font-weight: 640; }
 
 .skip-link {
   position: absolute; left: 1rem; top: -100%;
-  z-index: 200; background: var(--signal); color: #fff;
+  z-index: 200; background: var(--signal); color: var(--on-gold);
   padding: 0.7rem 1.1rem; border-radius: 10px; font-weight: 600;
   transition: top 0.2s ease;
 }
-.skip-link:focus { top: 1rem; color: #fff; }
+.skip-link:focus { top: 1rem; color: var(--on-gold); }
 
 :focus-visible {
-  outline: 3px solid var(--signal);
+  outline: 3px solid var(--ink);
   outline-offset: 2px;
   border-radius: 4px;
 }
 :root[data-theme="dark"] :focus-visible,
 .hero :focus-visible,
+.band :focus-visible,
+.cta-final :focus-visible,
 .site-footer :focus-visible { outline-color: var(--signal-on-ink); }
 
 /* ---------- Buttons ------------------------------------------------------ */
@@ -293,8 +303,10 @@ strong { font-weight: 640; }
 .btn:hover { transform: translateY(-1px); }
 .btn:active { transform: translateY(0); }
 
-.btn-primary { background: var(--signal); color: #fff; box-shadow: var(--shadow-sm); }
-.btn-primary:hover { background: var(--signal-hover); color: #fff; box-shadow: var(--shadow-md); }
+.btn-primary { background: var(--signal); color: var(--on-gold); box-shadow: var(--shadow-sm); }
+.btn-primary:hover { background: var(--signal-hover); color: var(--on-gold); box-shadow: var(--shadow-md); }
+/* keep gold-button text dark even inside the nav (higher-specificity nav rule) */
+.nav-links a.btn-primary, .nav-links a.btn-primary:hover { color: var(--on-gold); }
 
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line-strong); }
 .btn-ghost:hover { color: var(--ink); border-color: var(--ink); background: var(--signal-weak); }
@@ -341,18 +353,19 @@ strong { font-weight: 640; }
 
 .nav-right { display: flex; align-items: center; gap: 0.75rem; }
 
-/* Brand */
-.brand {
-  display: inline-flex; align-items: baseline; gap: 0.05rem;
-  font-family: var(--font-display); font-weight: 560; font-size: 1.5rem;
-  letter-spacing: -0.02em; color: var(--ink); text-decoration: none;
+/* Brand — image wordmark (theme-aware) */
+.brand { display: inline-flex; align-items: center; text-decoration: none; }
+.brand-mark { height: 1.6rem; width: auto; display: block; }
+.brand-mark--light { display: none; }
+:root[data-theme="dark"] .brand-mark--dark { display: none; }
+:root[data-theme="dark"] .brand-mark--light { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brand-mark--dark { display: none; }
+  :root:not([data-theme="light"]) .brand-mark--light { display: block; }
 }
-.brand:hover { color: var(--ink); }
-.brand .dot-ai {
-  font-family: var(--font-mono); font-weight: 600; font-size: 1.05rem;
-  color: var(--signal-ink);
-  letter-spacing: -0.02em;
-}
+/* Always-dark contexts (footer) force the light wordmark */
+.site-footer .brand-mark--dark { display: none; }
+.site-footer .brand-mark--light { display: block; }
 
 /* Theme toggle */
 .theme-toggle,
@@ -403,8 +416,8 @@ strong { font-weight: 640; }
 .hero {
   position: relative; overflow: hidden;
   background:
-    radial-gradient(120% 90% at 85% -10%, rgba(28, 62, 240, 0.35), transparent 55%),
-    radial-gradient(90% 80% at 0% 110%, rgba(125, 149, 255, 0.16), transparent 55%),
+    radial-gradient(120% 90% at 85% -10%, rgba(247, 178, 52, 0.22), transparent 55%),
+    radial-gradient(90% 80% at 0% 110%, rgba(247, 178, 52, 0.10), transparent 55%),
     var(--brand-ink);
   color: var(--on-ink);
   padding-block: clamp(3.5rem, 9vw, 7.5rem);
@@ -429,11 +442,14 @@ strong { font-weight: 640; }
 @media (max-width: 60rem) { .hero-grid { grid-template-columns: 1fr; } }
 
 .hero .eyebrow { color: var(--on-ink-soft); }
-.hero .eyebrow .para { color: var(--signal-on-ink); }
+/* On dark surfaces the § marker must be gold, not Anthrazit (would vanish) */
+.hero .eyebrow .para,
+.band .eyebrow .para,
+.cta-final .eyebrow .para { color: var(--signal-on-ink); }
 .hero h1 { color: var(--on-ink); margin-top: var(--space-m); }
 .hero h1 .accent {
   font-style: italic; font-weight: 400;
-  background: linear-gradient(100deg, #9fb0ff, #d7deff);
+  background: linear-gradient(100deg, #F7B234, #FBD98A);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .hero-sub {
@@ -443,6 +459,7 @@ strong { font-weight: 640; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-s); margin-top: var(--space-l); }
 .cta-note { margin-top: var(--space-s); font-family: var(--font-mono); font-size: var(--step--1); color: var(--ink-mute); }
 .hero .cta-note, .cta-final .cta-note { color: var(--on-ink-soft); }
+.console-caption { margin-top: 0.9rem; max-width: 30rem; font-family: var(--font-mono); font-size: var(--step--1); line-height: 1.5; color: var(--on-ink-soft); }
 
 .hero-trust {
   margin-top: var(--space-l); padding-top: var(--space-m);
@@ -478,7 +495,7 @@ strong { font-weight: 640; }
 }
 .console-title .live {
   display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%;
-  background: var(--verify); margin-right: 0.4rem; vertical-align: middle;
+  background: #34d399; margin-right: 0.4rem; vertical-align: middle;
 }
 .console-body { padding: 1.25rem clamp(1rem, 3vw, 1.5rem) 1.5rem; }
 
@@ -512,7 +529,7 @@ strong { font-weight: 640; }
   display: flex; gap: 0.6rem; align-items: flex-start;
   font-size: 0.92rem; color: var(--on-ink); line-height: 1.45;
 }
-.console-answer li svg { width: 1rem; height: 1rem; color: var(--verify); flex: none; margin-top: 0.2rem; }
+.console-answer li svg { width: 1rem; height: 1rem; color: #34d399; flex: none; margin-top: 0.2rem; }
 .console-foot {
   margin-top: 1.1rem; font-family: var(--font-mono); font-size: 0.72rem;
   color: var(--on-ink-soft); display: flex; align-items: center; gap: 0.5rem;
@@ -566,7 +583,7 @@ strong { font-weight: 640; }
   letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.35rem;
 }
 .mr-cell.myth .label { color: var(--ink-mute); }
-.mr-cell.real .label { color: var(--verify); }
+.mr-cell.real .label { color: var(--verify); } /* theme-aware green (dark on light, bright on dark) */
 
 /* ---------- Leistungen (offerings) -------------------------------------- */
 .offer {
@@ -615,7 +632,7 @@ strong { font-weight: 640; }
 .video-thumb {
   position: relative; aspect-ratio: 16 / 9;
   background:
-    radial-gradient(110% 120% at 20% 0%, rgba(28,62,240,0.25), transparent 60%),
+    radial-gradient(110% 120% at 20% 0%, rgba(247,178,52,0.22), transparent 60%),
     var(--brand-ink-2);
   display: grid; place-items: center;
 }
@@ -646,7 +663,7 @@ strong { font-weight: 640; }
 /* ---------- Security / DSGVO band --------------------------------------- */
 .band {
   background:
-    radial-gradient(90% 120% at 100% 0%, rgba(28,62,240,0.30), transparent 55%),
+    radial-gradient(90% 120% at 100% 0%, rgba(247,178,52,0.20), transparent 55%),
     var(--brand-ink-2);
   color: var(--on-ink); border-radius: var(--radius-lg);
   padding: clamp(2rem, 5vw, 3.5rem);
@@ -704,8 +721,8 @@ strong { font-weight: 640; }
 .cta-final {
   position: relative; overflow: hidden; border-radius: var(--radius-lg);
   background:
-    radial-gradient(120% 140% at 0% 0%, rgba(28,62,240,0.4), transparent 55%),
-    radial-gradient(100% 120% at 100% 100%, rgba(125,149,255,0.22), transparent 55%),
+    radial-gradient(120% 140% at 0% 0%, rgba(247,178,52,0.26), transparent 55%),
+    radial-gradient(100% 120% at 100% 100%, rgba(247,178,52,0.12), transparent 55%),
     var(--brand-ink);
   color: var(--on-ink); text-align: center;
   padding: clamp(2.5rem, 7vw, 5rem) clamp(1.25rem, 5vw, 3rem);
@@ -811,8 +828,8 @@ strong { font-weight: 640; }
 .viz { margin: 0; }
 .viz-canvas-wrap {
   position: relative; width: 100%; aspect-ratio: 16 / 11;
-  background: var(--surface); border: 1px solid var(--line);
-  border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden;
+  background: var(--brand-ink); border: 1px solid var(--on-ink-line);
+  border-radius: var(--radius); box-shadow: var(--shadow-md); overflow: hidden;
 }
 .viz-canvas-wrap canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .source-note {
@@ -843,7 +860,7 @@ strong { font-weight: 640; }
   min-height: 8.5rem; border-radius: 12px; overflow: hidden;
   display: flex; align-items: center; justify-content: center;
   background:
-    radial-gradient(120% 120% at 20% 0%, rgba(28, 62, 240, 0.30), transparent 60%),
+    radial-gradient(120% 120% at 20% 0%, rgba(247, 178, 52, 0.24), transparent 60%),
     var(--brand-ink-2);
 }
 .person-initials {

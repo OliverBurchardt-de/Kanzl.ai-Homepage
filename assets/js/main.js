@@ -223,14 +223,14 @@
   }
 
   function colors() {
-    var s = getComputedStyle(document.documentElement);
-    var g = function (k, f) { return (s.getPropertyValue(k) || "").trim() || f; };
+    // Charts render on a fixed dark (Anthrazit) panel in both themes,
+    // so gold data has strong contrast and the look matches the hero console.
     return {
-      ink: g("--ink", "#0b111e"),
-      soft: g("--ink-soft", "#37414f"),
-      mute: g("--ink-mute", "#5c6675"),
-      line: g("--line", "rgba(11,17,30,.12)"),
-      signal: g("--signal", "#1c3ef0")
+      ink: "#f5f4f0",
+      soft: "#aeb1b6",
+      mute: "#8b8e94",
+      line: "rgba(255,255,255,0.12)",
+      signal: "#F7B234"
     };
   }
 

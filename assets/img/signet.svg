@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="kanzl.ai">
-  <rect width="120" height="120" rx="26" fill="#22252A"/>
+  <circle cx="60" cy="60" r="58" fill="#22252A"/>
   <text x="60" y="83" font-family="Poppins, Montserrat, 'Segoe UI', sans-serif" font-weight="600" font-size="62" letter-spacing="-1" fill="#FFFFFF" text-anchor="end">k</text>
   <circle cx="76" cy="76" r="8" fill="#F7B234"/>
 </svg>
