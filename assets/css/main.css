@@ -901,3 +901,7 @@ strong { font-weight: 640; }
 }
 .ledger-arrow::before { content: "→ "; }
 .ledger-foot { margin-top: var(--space-s); font-size: var(--step--1); color: var(--on-ink-soft); }
+
+/* Video slot inside the proof band (self-hosted, DSGVO-clean) */
+.proof-video { border: 1px solid var(--on-ink-line); border-radius: var(--radius); width: 100%; }
+.proof-video.video-thumb .badge { background: rgba(0, 0, 0, 0.45); }
