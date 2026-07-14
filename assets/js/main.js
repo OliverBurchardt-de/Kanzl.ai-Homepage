@@ -370,7 +370,7 @@
       ctx.beginPath(); ctx.moveTo(hx, hy); ctx.lineTo(hx, hy - 30); ctx.stroke(); ctx.setLineDash([]);
       ctx.fillStyle = c.soft; ctx.font = "500 11px 'JetBrains Mono', monospace";
       ctx.textAlign = "right"; ctx.textBaseline = "bottom";
-      ctx.fillText("~200.000 · 50+ Jahre", hx - 3, hy - 32);
+      ctx.fillText("~190.000 · 50+ Jahre", hx - 3, hy - 32);
       ctx.globalAlpha = 1;
     }
     // ×1.000 badge — placed left of the cliff so it never clips the right edge
