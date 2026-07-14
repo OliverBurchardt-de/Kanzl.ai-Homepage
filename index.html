@@ -136,8 +136,43 @@
             </ul>
           </div>
 
-          <!-- Signature: Prompt-Konsole -->
-          <div class="hero-console" aria-hidden="false">
+          <!-- Signature: Founder-/Vertrauensvideo -->
+          <div class="hero-video">
+            <figure class="founder-video">
+              <div class="video-thumb founder-thumb" role="img" aria-label="Kurzvideo von Oliver Burchardt – folgt in Kürze.">
+                <svg class="founder-silhouette" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-5 0-9 2.6-9 6v2h18v-2c0-3.4-4-6-9-6z"/></svg>
+                <span class="badge">Vorstellung · folgt</span>
+                <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+              </div>
+              <figcaption class="founder-caption">Oliver Burchardt — Steuerberater &amp; Wirtschaftsprüfer. In rund 90 Sekunden: warum es kanzl.ai gibt.</figcaption>
+            </figure>
+            <!--
+              Echtes Founder-Video später einbinden – DSGVO-konform, selbst gehostet, keine Dritt-Requests.
+              Video nach /assets/video/ und ein Poster-Standbild (mit Gesicht) nach /assets/img/ legen,
+              dann den DIV .video-thumb.founder-thumb oben ersetzen durch:
+
+              <video class="video-thumb founder-thumb" controls preload="none" playsinline poster="/assets/img/oliver-vorstellung-poster.jpg" style="display:block">
+                <source src="/assets/video/vorstellung.webm" type="video/webm" />
+                <source src="/assets/video/vorstellung.mp4" type="video/mp4" />
+                <track kind="captions" src="/assets/video/vorstellung.de.vtt" srclang="de" label="Deutsch" default />
+                Ihr Browser kann dieses Video leider nicht abspielen.
+              </video>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Live-Beispiel (Konsole) ===================== -->
+    <section class="section" id="beispiel" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="band on-dark">
+          <div class="band-grid">
+            <div>
+              <p class="eyebrow"><span class="para">&#9656;</span> Beispiel aus der Praxis</p>
+              <h2 id="demo-title">So sieht KI-Unterstützung im Kanzleialltag aus</h2>
+              <p class="lead" style="color:var(--on-ink-soft)">Kein Zukunftsversprechen — ein alltäglicher Handgriff mit Werkzeugen, die es längst gibt. Wir verkaufen keine Software; wir zeigen Ihrem Team, wie es damit arbeitet.</p>
+            </div>
             <div class="console" role="img" aria-label="Beispiel: Eine KI prüft einen Steuerbescheid, erkennt Abweichungen zur Steuererklärung und merkt die Einspruchsfrist vor.">
               <div class="console-bar">
                 <span class="console-dots" aria-hidden="true"><span></span><span></span><span></span></span>
@@ -162,7 +197,6 @@
                 </div>
               </div>
             </div>
-            <p class="console-caption">So sieht KI-Unterstützung im Kanzleialltag aus — mit Werkzeugen, die es längst gibt. Wir verkaufen keine Software; wir zeigen Ihrem Team, wie es damit arbeitet.</p>
           </div>
         </div>
       </div>
