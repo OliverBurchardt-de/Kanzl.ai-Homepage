@@ -61,12 +61,20 @@ Muster je Seite: *Das Problem im Alltag → Wie KI hilft (mit kurzem Demo-Video)
 Ein konkretes Beispiel → Grenzen & Sicherheit (was NICHT reingehört) → So lernt Ihr
 Team das.*
 
-1. Bescheide & Belege prüfen
-2. Mandantenkommunikation (Schreiben, Erklärungen)
-3. Berichte, Gutachten & Verträge zusammenfassen
-4. Verträge & Schriftsätze *(Schwerpunkt Anwälte)*
-5. Recherche vorbereiten (Steuer-/Rechtsfragen)
-6. Diktat & Transkription
+Fokus auf die **Kern-Produktion** (Volumen + Wertschöpfung), durchgängig ehrlich
+gerahmt als **KI-Unterstützung/Review, Freigabe beim Menschen, läuft mit DATEV**:
+
+1. **FIBU erstellen** – Belege interpretieren, Kontierungsvorschläge, Muster ✅ gebaut
+2. **FIBU & Jahresabschluss reviewen** – Auffälligkeiten, Plausibilität, Konsistenz ✅ gebaut
+3. **Jahresabschluss erstellen** – Kontenanalyse, Vollständigkeit, Textbausteine ✅ gebaut
+4. **Steuererklärungen** – Datenübernahme, Vollständigkeit, Plausibilität ✅ gebaut
+5. **Recherche** (Steuer & Recht, *auch Anwälte*) – Startpunkt, Fundstellen verifizieren ✅ gebaut
+6. **Bescheide & Belege prüfen** – Abgleich, Abweichungen, Fristen ✅ gebaut
+
+Bewusst **kein** eigener Use-Case: *Mandantenkommunikation*, *Berichte zusammenfassen*,
+*Diktat & Transkription* (zu klein). **„Gesprochene Prompts – mit KI reden statt tippen"**
+ist kein Use-Case, sondern eine Arbeitsweise → gehört als **Wissens-/Video-Thema** in den
+Blog (§ 4), nicht in die Bibliothek.
 
 ---
 
