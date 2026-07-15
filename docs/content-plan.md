@@ -163,4 +163,45 @@ Die aktuelle Landingpage + alles, was „präsentabel" heißt:
 - [ ] **Kanzleiname/-größe** für den Glaubwürdigkeits-Anker
 - [ ] **Tool-/Prompt-Material** für die Lead-Magnete
 - [ ] **Berufsrechtliche Freigabe** der Werbeaussagen (WPO/StBerG, § 57a) vor Livegang
-- [ ] **Kuipers Seite** (Link) — zum Abgleich der Themenabdeckung
+- [ ] ~~Kuipers Seite (Link)~~ ✅ geklärt: = **Novist / Ken Keiper** (siehe § 10)
+
+---
+
+## 10. Benchmark: Novist (Ken Keiper) — was wir übernehmen, was nicht
+
+„Kollege Kuiper" = **Ken Keiper**, Gründer von **Novist** (novist.de) — Steuerberater,
+der eine E-Learning-Plattform für Steuerkanzleien betreibt.
+
+**Novist im Überblick:**
+- Founder-Glaubwürdigkeit (StB, führt eigene Kanzlei) im Zentrum.
+- Produkt = E-Learning + **Vorlagen** + **Chat-Support** (Antwort in Stunden) +
+  **Community** + **Live-Webinare/Live-Calls** + **iOS-App**.
+- Themenbreite: DATEV, Schnittstellen, aktuelles Steuerrecht (laufend), Digitalisierung,
+  KI, Fortbildung für Steuerfachangestellte.
+- **Einzelne Kurs-Landingpages mit sichtbarem Preis** (z. B. „ab 20 €").
+- Sozialer Beweis massiv: **250+ Kanzleien**, Trustpilot, YouTube-Kanal.
+- Einstieg: 14 Tage kostenlos → Abo nach Kanzleigröße.
+
+### Übernehmen (adaptiert, eigenständig formuliert)
+1. **Founder-first** — Oliver sichtbar (Video ✅). Deckt sich mit unserem Ansatz.
+2. **Themen-Landingpages mit Preis-Anker** — je Use-Case/Leistung eine eigene Seite,
+   Preis sichtbar (auch „ab X €"). Löst zugleich den Skeptiker-Einwand „kein Preis".
+3. **Sozialer Beweis prominent** — Kundenstimmen-Seite + Zahlen. Unsere größte Lücke.
+   (Wir starten klein & ehrlich: erste Referenzen statt „250 Kanzleien".)
+4. **Vorlagen als Mitgebsel** — deckt sich mit unserer Umsetzungs-Antwort (Fahrplan +
+   Vorlagen). Sichtbar machen.
+5. **Niedrigschwelliger Einstieg** — bei uns: kostenloses Erstgespräch + evtl. ein
+   kostenloser Mini-Kurs / Lead-Magnet.
+6. **Live-Format** — später: monatliches Q&A-Webinar „KI-Sprechstunde für Kanzleien"
+   (Reichweite + Community, ohne Novists ganze Plattform-Maschinerie).
+
+### Bewusst NICHT übernehmen
+- **Die Breite** (DATEV-Schulung, Steuerrecht-Updates, Fachangestellten-Fortbildung).
+  Das ist Novists Modell — unser Wedge ist **Tiefe auf KI**. Wer alles macht, ist für
+  „KI in der Kanzlei" niemandes erste Wahl. Wir schon.
+- **Eigene App / Plattform-Technik** zum Start — wäre „technische Implementierung",
+  die wir bewusst nicht anbieten. Enablement bleibt Enablement.
+- **Aufgeblähte Feature-Liste** — lieber wenige, tiefe Beweise.
+
+### Kern-Satz der Abgrenzung (für die Startseite denkbar)
+> „Andere schulen Ihre Kanzlei in allem. Wir machen eine Sache richtig: KI."
