@@ -469,6 +469,13 @@ strong { font-weight: 640; }
 /* Konsole als eigenständiges dunkles Terminal (auf hellen Flächen) */
 .console.console--solid { background: var(--brand-ink); }
 
+/* Blog / Wissen */
+.card h3 a { color: inherit; text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; text-decoration-color: var(--signal); text-underline-offset: 3px; }
+.card.is-soon { opacity: 0.66; }
+.card.is-soon .card-more { color: var(--ink-mute); font-weight: 500; }
+.article-meta { font-family: var(--font-mono); font-size: var(--step--1); color: var(--ink-mute); margin-top: var(--space-s); }
+
 .hero .eyebrow { color: var(--on-ink-soft); }
 /* On dark surfaces the § marker must be gold, not Anthrazit (would vanish) */
 .hero .eyebrow .para,
