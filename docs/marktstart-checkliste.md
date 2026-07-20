@@ -63,12 +63,12 @@ ganze Kursbibliothek zu drehen.
 - 🔴 **Terminbuchung** — Calendly/Cal.com o. ä. einbinden (Slot ist vorbereitet).
 - 🔴 **Hosting & Domain live** — kanzl.ai auf DSGVO-konformem EU-Hosting.
 - 🟡 **Professionelles Foto** (siehe Video).
-- 🟢 **Datenschutzfreundliche Statistik** (optional, cookie-frei).
 
 ## 4. Das Produkt dahinter (die „Mitgebsel“)
 
 Die Seite verspricht Fahrplan + Vorlagen + Prompts. Die müssen minimal existieren,
-sonst bricht das Versprechen:
+sonst bricht das Versprechen. **Vollständige Ausarbeitung inkl. Kurskatalog und
+konkreten Prompts: `docs/kurskatalog.md`.**
 
 - 🔴 **Ein Prompt-Set** für die wichtigsten Use-Cases (FIBU, Review, Steuererklärung,
   Recherche).
