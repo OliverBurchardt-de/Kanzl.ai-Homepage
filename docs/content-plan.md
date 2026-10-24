@@ -123,6 +123,9 @@ E-Mail-Adressen für den Newsletter.
 - **Kundenstimmen-Videos** — sobald Referenzen zusagen.
 
 Alle Videos **DSGVO-konform selbst gehostet** (kein YouTube-Embed), mit Untertiteln.
+Ausnahme: Videos vom YouTube-Kanal @KanzlAI in Wissen-Beiträgen per **Zwei-Klick-Lösung**
+(Vorschaubild lokal, Player von youtube-nocookie.com erst nach Klick, Hinweis in
+`datenschutz.html#youtube`). Erstes Beispiel: `wissen/ki-in-der-kanzlei-verboten.html`.
 
 ---
 

@@ -449,3 +449,30 @@
   if (expEl && expEl.getContext) mount(expEl, drawExp);
   if (gapEl && gapEl.getContext) mount(gapEl, drawGap);
 })();
+
+/* ==========================================================================
+   YouTube per Zwei-Klick — bis zum Klick keine Verbindung zu YouTube.
+   Ohne JS bleibt der Link auf youtube.com als Fallback.
+   ========================================================================== */
+(function () {
+  "use strict";
+  var boxes = document.querySelectorAll("[data-yt-id]");
+  Array.prototype.forEach.call(boxes, function (box) {
+    var trigger = box.querySelector(".yt-load");
+    var stage = box.querySelector(".yt-frame");
+    if (!trigger || !stage) return;
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" +
+        encodeURIComponent(box.getAttribute("data-yt-id")) + "?autoplay=1&rel=0";
+      frame.title = box.getAttribute("data-yt-title") || "YouTube-Video";
+      frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      frame.allowFullscreen = true;
+      while (stage.firstChild) stage.removeChild(stage.firstChild);
+      stage.appendChild(frame);
+      frame.focus();
+    });
+  });
+})();
